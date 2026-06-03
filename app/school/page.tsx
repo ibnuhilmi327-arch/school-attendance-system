@@ -1,16 +1,26 @@
+import Sidebar from "@/components/Sidebar"
 
-export default function SchoolProfile() {
+export default function SchoolPage() {
   return (
-    <main className="p-6">
-      <div className="bg-white p-6 rounded-xl shadow">
-        <img src="/logo.png" className="w-24 mb-4" />
+    <div className="flex">
+      <Sidebar />
 
-        <h1 className="text-3xl font-bold">
-          SMK Indonesia
-        </h1>
+      <main className="flex-1 p-6">
+        <div className="card max-w-xl">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+            className="w-24 mb-4"
+          />
 
-        <p>Jl. Pendidikan No. 1</p>
-      </div>
-    </main>
+          <h1 className="text-4xl font-bold mb-2">
+            SMK Indonesia
+          </h1>
+
+          <p className="text-gray-500">
+            Jl Pendidikan No 1
+          </p>
+        </div>
+      </main>
+    </div>
   )
 }

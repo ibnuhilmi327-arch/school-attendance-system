@@ -1,4 +1,3 @@
-
 CREATE TABLE students (
   id SERIAL PRIMARY KEY,
   name VARCHAR(100),
@@ -25,4 +24,11 @@ CREATE TABLE grades (
   student_id INTEGER,
   subject VARCHAR(100),
   score INTEGER
+);
+
+CREATE TABLE school_profile (
+  id SERIAL PRIMARY KEY,
+  school_name VARCHAR(100),
+  address TEXT,
+  logo TEXT
 );
